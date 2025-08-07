@@ -13,6 +13,8 @@ It was developed as part of the **Scientific Computing with Python** certificati
   - Operands must be no more than four digits.
   - Only '+' and '-' operators are allowed.
 
-## Example Usage
+## Examples
 print(arithmetic_arranger(["3801 - 2", "123 + 49"]))
-print(arithmetic_arranger(["1 + 2", "1 - 9380"], True))
+
+print(arithmetic_arranger(["1 + 2", "1 - 9380"]))
+
