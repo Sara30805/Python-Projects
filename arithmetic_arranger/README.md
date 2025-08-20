@@ -18,3 +18,6 @@ print(arithmetic_arranger(["3801 - 2", "123 + 49"]))
 
 print(arithmetic_arranger(["1 + 2", "1 - 9380"]))
 
+## Tests
+To run the tests for this project, navigate to the project root directory and execute:
+python3 -m unittest discover tests
