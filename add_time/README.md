@@ -14,14 +14,17 @@ It was developed as part of the **Scientific Computing with Python** certificati
   - Time format must be correct (e.g., '3:30 PM').
   - Duration format must be correct (e.g., '2:12').
 
-## Examples
+## Usage
+```python
+from add_time import add_time
 
 print(add_time("3:30 PM", "2:12"))
-
 print(add_time("2:59 AM", "24:00"))
-
 print(add_time("11:59 PM", "24:05", "Wednesday"))
+```
 
 ## Tests
 To run the tests for this project, navigate to the project root directory and execute:
+```bash
 python3 -m unittest discover tests
+```

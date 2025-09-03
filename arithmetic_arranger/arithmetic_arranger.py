@@ -1,9 +1,9 @@
-def arithmetic_arranger(problems, show_answers=False):
+def arithmetic_arranger(problems: list[str], show_answers: bool = False) -> str:
 
     """
     This function formats up to five arithmetic problems (addition and subtraction) and optionally shows their solutions. 
     
-    It is part of the Scientific Computing with Python course from freeCodeCamp.
+    It is part of the Scientific Computing with Python course from freeCodeCamp. Apart from the project requirements, it also has an error control which is specified in the docstring.
 
     Parameters:
     ----------
@@ -21,13 +21,11 @@ def arithmetic_arranger(problems, show_answers=False):
         vertically and separated by four spaces. If show_answers is True,
         the solutions are also included.
 
-    Errors:
-    ------
-    Returns error messages as strings for the following cases:
-        - More than five problems are provided.
-        - Operands contain non-digit characters.
-        - Operands are more than four digits in length.
-        - Operator is not '+' or '-'.
+        If an error occurs, the function instead returns a string with an appropiate error message:
+            - "Error: Too many problems." (more than five problems are provided)
+            - "Error: Numbers must only contain digits." (operands contain non-digit characters)
+            - "Error: Numbers cannot be more than four digits." (operands are more than four digits in length)
+            - "Error: Operator must be '+' or '.'." (operator is not '+' or '-')
     """
     
     # error control

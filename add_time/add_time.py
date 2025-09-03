@@ -1,8 +1,8 @@
-def add_time(start, duration, day_of_week = ''):
+def add_time(start: str, duration: str, day_of_week: str = '') -> str:
     """
     This function calculates the new time after adding a duration to a start time.
     
-    It is part of the Scientific Computing with Python course from freeCodeCamp. Apart from the proyect requirements, it also has an error control which is specified in the docstring.
+    It is part of the Scientific Computing with Python course from freeCodeCamp. Apart from the project requirements, it also has an error control which is specified in the docstring.
 
     Parameters:
     ----------
@@ -18,21 +18,21 @@ def add_time(start, duration, day_of_week = ''):
     str
         A string that contains the new time after adding the duration to the start time.
     
-    Errors:
+    Raises:
     ------
-    Raises ValueError for the following cases:
-        - Start is not a string.
-        - Duration is not a string.
-        - Day of the week is not a string.
-        - Day of the week is not a valid day.
-        - Start hour is not between 1 and 12.
-        - Start minute is not between 0 and 59.
-        - Start does not end with AM or PM.
-        - Duration is invalid (negative or minutes >= 60).
-        - Start is not in the format "HH:MM AM/PM".
-        - Start hour and minute are not integers.
-        - Duration is not in the format "HH:MM".
-        - Duration hours and minutes are not integers.
+    ValueError
+        Raised for invalid inputs, including but not limited to:
+        - `start` is not a string.
+        - `duration` is not a string.
+        - `day_of_week` is not a string or is invalid.
+        - `start` hour is not between 1 and 12.
+        - `start` minute is not between 0 and 59.
+        - `start` does not end with AM or PM.
+        - `duration` is invalid (negative or minutes >= 60).
+        - `start` not in the format "HH:MM AM/PM".
+        - `start` hour and minute are not integers.
+        - `duration` not in the format "HH:MM".
+        - `duration` hours and minutes are not integers.
     """
 
     # a list with the days of the week that will be used to determinate the final day
